@@ -13,9 +13,6 @@ var messages = [
 
 exports.handler = async (event, context) => {
     let message =  messages[Math.floor(Math.random()*10)];
-    console.error("An error ocurred");
-    console.log("A log message");
-    console.info("An informative message");
-    console.warn("Warning message");
+    throw new Error("This is a random error!")
     return message;
 }
