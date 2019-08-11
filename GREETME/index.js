@@ -13,6 +13,5 @@ var messages = [
 
 exports.handler = async (event, context) => {
     let message =  messages[Math.floor(Math.random()*10)];
-    throw new Error("This is a random error!")
     return message;
 }
