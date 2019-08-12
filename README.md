@@ -14,10 +14,10 @@ aws lambda update-function-code --function-name [funtion-name] --s3-bucket [buck
 ###### Limites de AWS Lambda
 Información extraída de la documentación oficial de AWS
 <https://docs.aws.amazon.com/lambda/latest/dg/limits.html>
-**Asignación de memoria:** Desde 128MG hasta 3008MB, en incrementos de 64MG
-**Almacenamiento Temporal en disco (/tmp):** 512MG
-**Tiempo de espera:** 900 segundos o 15 minutos
-**Cuerpo de invocación (body):** 6MG para invocaciones síncronas y 256KB para invocaciones asíncronas
-**Tamaño del paquete de implementación:** 50MG Comprimido, 256MG descomprimido, 3MB en el editor en línea de AWS
-**Máximo tamaño de funciones en una región:** 75GB
-**Concurrencia:** 1000 Ejecuciones concurrentes por región que serán distribuidas para todas las funciones lambda contenidas en la misma. Se puede reservar una determinada concurrencia para una función lambda pero esto puede afectar a las demás funciones de la región, las cuales solo dispondrán de la concurrencias restante disponible.
+   **Asignación de memoria:** Desde 128MG hasta 3008MB, en incrementos de 64MG  
+   **Almacenamiento Temporal en disco (/tmp):** 512MG  
+   **Tiempo de espera:** 900 segundos o 15 minutos  
+   **Cuerpo de invocación (body):** 6MG para invocaciones síncronas y 256KB para invocaciones asíncronas  
+   **Tamaño del paquete de implementación:** 50MG Comprimido, 256MG descomprimido, 3MB en el editor en línea de AWS  
+   **Máximo tamaño de funciones en una región:** 75GB  
+   **Concurrencia:** 1000 Ejecuciones concurrentes por región que serán distribuidas para todas las funciones lambda contenidas en la misma. Se puede reservar una determinada concurrencia para una función lambda pero esto puede afectar a las demás funciones de la región, las cuales solo dispondrán de la concurrencias restante disponible.  
