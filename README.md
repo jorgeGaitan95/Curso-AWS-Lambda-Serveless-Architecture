@@ -3,14 +3,17 @@ Repositorio de proyectos y conocimientos adquiridos en el curso de AWS de Udemy
 
 ## Información Importante obtenida del curso
 
-#### Lanzamiento función Lambda via AWS CLI
+###### Lanzamiento función Lambda via AWS CLI
 1. Generar archivo zip con el código que desea asignar a la función lambda
 2. Abrir la línea de comandos y ejecutar las siguientes instrucciones utilizando aws cli
 ```{r, engine='sh', count_lines}
 aws s3 cp [zip-name.zip] s3://[bucket-name]/[zip-name.zip]
 aws lambda update-function-code --function-name [funtion-name] --s3-bucket [bucket-name] --s3-key [zip-name.zip] --publish --region [region]
 ```
-#### Limites de AWS Lambda
+
+___
+
+###### Limites de AWS Lambda
 Información extraída de la documentación oficial de AWS [Limites Aws Lambda](<https://docs.aws.amazon.com/lambda/latest/dg/limits.html>)
 
    **Asignación de memoria:** Desde 128MG hasta 3008MB, en incrementos de 64MG  
@@ -21,7 +24,9 @@ Información extraída de la documentación oficial de AWS [Limites Aws Lambda](
    **Máximo tamaño de funciones en una región:** 75GB  
    **Concurrencia:** 1000 Ejecuciones concurrentes por región que serán distribuidas para todas las funciones lambda contenidas en la misma. Se puede reservar una determinada concurrencia para una función lambda pero esto puede afectar a las demás funciones de la región, las cuales solo dispondrán de la concurrencias restante disponible.  
 
-#### Limites de AWS Lambda
+___
+
+###### Limites de AWS Lambda
 Información extraída de la documentación oficial de AWS [Costos Aws Lambda](<https://aws.amazon.com/lambda/pricing/>)
     
    Lambda dispone de un modelo sencillo de precios basándose en la facturación por tiempo y recursos consumidos en la ejecución de la función.  
