@@ -14,6 +14,7 @@ aws lambda update-function-code --function-name [funtion-name] --s3-bucket [buck
 ###### Limites de AWS Lambda
 Información extraída de la documentación oficial de AWS
 <https://docs.aws.amazon.com/lambda/latest/dg/limits.html>
+
    **Asignación de memoria:** Desde 128MG hasta 3008MB, en incrementos de 64MG  
    **Almacenamiento Temporal en disco (/tmp):** 512MG  
    **Tiempo de espera:** 900 segundos o 15 minutos  
