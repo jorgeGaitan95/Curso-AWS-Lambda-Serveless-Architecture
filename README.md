@@ -1,5 +1,5 @@
 # Curso-AWSLambdaAndServelessArchitecture
-Repositorio de proyectos y conocimientos adquiridos en el curso de AWS de Udemy
+Repositorio de proyectos y conocimientos adquiridos en el curso de [AWS Lambda & Serverless Architecture Bootcamp](<https://www.udemy.com/aws-lambda-serverless-architecture>)
 
 ## Información Importante obtenida del curso
 
